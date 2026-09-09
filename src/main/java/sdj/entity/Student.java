@@ -36,6 +36,13 @@ public class Student implements Serializable {
 	public Long getId() {
 		return id;
 	}
+	//setter and getter for enrollmentId
+	public String getEnrollmentId() {
+		return enrollmentId;
+	}
+	public void setEnrollmentId(String enrollmentId) {
+		this.enrollmentId = enrollmentId;
+	}
 	
 	@Override
 	public String toString() {
