@@ -1,5 +1,7 @@
 package sdj.repository;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import sdj.entity.User;
 
@@ -52,16 +54,16 @@ public interface UserRepository extends JpaRepository<User,Long> {
     List<User> findByEmailNotNull();
 
     //IsNot, IsEmpty, IsNotEmpty, IsBlank, IsNotBlank
-    List<User> findByLevelIsNot(Integer level);
-    List<User> findByLevelNot(Integer level);
-    List<User> findByEmailIsEmpty();
-    List<User> findByEmailEmpty();
-    List<User> findByEmailIsNotEmpty();
-    List<User> findByEmailNotEmpty();
-    List<User> findByEmailIsBlank();
-    List<User> findByEmailBlank();
-    List<User> findByEmailIsNotBlank();
-    List<User> findByEmailNotBlank();
+//    List<User> findByLevelIsNot(Integer level);
+//    List<User> findByLevelNot(Integer level);
+//    List<User> findByEmailIsEmpty();
+//    List<User> findByEmailEmpty();
+//    List<User> findByEmailIsNotEmpty();
+//    List<User> findByEmailNotEmpty();
+//    List<User> findByEmailIsBlank();
+//    List<User> findByEmailBlank();
+//    List<User> findByEmailIsNotBlank();
+//    List<User> findByEmailNotBlank();
 
     //True, False
     List<User> findByIsActiveTrue();
@@ -76,7 +78,8 @@ public interface UserRepository extends JpaRepository<User,Long> {
     List<User> findDistinctByLevel(Integer level);
 
 
-
+    //***Paging***
+    Page<User> findAll(Pageable pageable);
 
 
 }

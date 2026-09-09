@@ -19,7 +19,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class MainApplicationTests {
 	@Autowired
 	StudentRepository studentRepository;
-	
+
 	@Test
 	public void testCrud(){
 		//create
@@ -74,6 +74,9 @@ public class MainApplicationTests {
 		//delete all students using studentRepository.deleteAll() method
 		studentRepository.deleteAll();
 	}
+
+
+
 
 
 }
