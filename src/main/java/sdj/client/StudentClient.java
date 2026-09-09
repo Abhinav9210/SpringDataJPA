@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import sdj.entity.Student;
 import sdj.repository.StudentRepository;
 
-@Component
+//@Component
 public class StudentClient implements ApplicationRunner {
 	
 	@Autowired
