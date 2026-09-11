@@ -2,6 +2,7 @@ package sdj.entity;
 
 import jakarta.persistence.*;
 
+@Entity
 public class Guide {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,8 +14,8 @@ public class Guide {
     private String name;
     private Integer salary;
 
-    @Version
-    private Integer version;
+//    @Version
+//    private Integer version;
 
     public Guide() {}
     public Guide(String staffId, String name, Integer salary) {

@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Component
-@Order(2)
+//@Component
+//@Order(2)
 public class OptimisticLockingClient implements ApplicationRunner{
     @Autowired
     User1Client user1Client;
